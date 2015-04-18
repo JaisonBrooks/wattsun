@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  get 'docs/show'
+  get 'docs' => 'docs#show'
 
   get 'home/show'
   root 'home#show'

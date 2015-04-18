@@ -1,6 +1,9 @@
 Rails.application.routes.draw do
   get 'home/show'
   root 'home#show'
+  resources :energy, only: [:index]
+  resources :power, only: [:index]
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

@@ -25,3 +25,1445 @@ Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-18 10:11:57
 
 
 Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2015-04-18 10:11:57 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-18 10:40:07 -0700
+Processing by HomeController#show as HTML
+  Rendered home/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 134ms (Views: 126.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/energy.css?body=1" for 127.0.0.1 at 2015-04-18 10:40:07 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-18 10:40:07 -0700
+
+
+Started GET "/assets/energy.js?body=1" for 127.0.0.1 at 2015-04-18 10:40:07 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-18 10:40:07 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-04-18 10:40:07 -0700
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2015-04-18 10:40:07 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-18 10:40:07 -0700
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2015-04-18 10:40:07 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-18 10:40:07 -0700
+
+
+Started GET "/energy" for 127.0.0.1 at 2015-04-18 10:40:11 -0700
+
+AbstractController::ActionNotFound (The action 'index' could not be found for EnergyController):
+  actionpack (4.1.9) lib/abstract_controller/base.rb:131:in `process'
+  actionview (4.1.9) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.9) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.1.9) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.9) lib/action_controller/metal.rb:232:in `block in action'
+  actionpack (4.1.9) lib/action_dispatch/routing/route_set.rb:82:in `call'
+  actionpack (4.1.9) lib/action_dispatch/routing/route_set.rb:82:in `dispatch'
+  actionpack (4.1.9) lib/action_dispatch/routing/route_set.rb:50:in `call'
+  actionpack (4.1.9) lib/action_dispatch/journey/router.rb:73:in `block in call'
+  actionpack (4.1.9) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.9) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.9) lib/action_dispatch/routing/route_set.rb:685:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.9) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.9) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.9) lib/action_dispatch/middleware/cookies.rb:562:in `call'
+  activerecord (4.1.9) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.9) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.9) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.9) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.9) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.9) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.9) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.9) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.9) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.9) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.9) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.9) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.9) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.9) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.9) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.9) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.9) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.9) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.9) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.9) lib/rails/engine.rb:514:in `call'
+  railties (4.1.9) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/jbrooks/.rvm/rubies/ruby-2.1.4/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/jbrooks/.rvm/rubies/ruby-2.1.4/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/jbrooks/.rvm/rubies/ruby-2.1.4/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/jbrooks/.rvm/gems/ruby-2.1.4/gems/actionpack-4.1.9/lib/action_dispatch/middleware/templates/rescues/unknown_action.html.erb within rescues/layout (0.5ms)
+
+
+Started GET "/energy" for 127.0.0.1 at 2015-04-18 10:40:39 -0700
+Processing by EnergyController#index as HTML
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/energy" for 127.0.0.1 at 2015-04-18 10:44:01 -0700
+Processing by EnergyController#index as HTML
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/energy" for 127.0.0.1 at 2015-04-18 10:51:19 -0700
+Processing by EnergyController#index as HTML
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/energy?watts=12" for 127.0.0.1 at 2015-04-18 10:51:34 -0700
+Processing by EnergyController#index as HTML
+  Parameters: {"watts"=>"12"}
+Completed 500 Internal Server Error in 1ms
+
+NoMethodError (undefined method `kw' for #<Watt:0x007fcac4b8dfd0 @watts="12">):
+  app/controllers/energy_controller.rb:11:in `index'
+
+
+  Rendered /Users/jbrooks/.rvm/gems/ruby-2.1.4/gems/actionpack-4.1.9/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /Users/jbrooks/.rvm/gems/ruby-2.1.4/gems/actionpack-4.1.9/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/jbrooks/.rvm/gems/ruby-2.1.4/gems/actionpack-4.1.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/jbrooks/.rvm/gems/ruby-2.1.4/gems/actionpack-4.1.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (14.3ms)
+
+
+Started GET "/energy?watts=12" for 127.0.0.1 at 2015-04-18 10:52:24 -0700
+Processing by EnergyController#index as HTML
+  Parameters: {"watts"=>"12"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/energy?watts=12" for 127.0.0.1 at 2015-04-18 10:52:56 -0700
+Processing by EnergyController#index as HTML
+  Parameters: {"watts"=>"12"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/energy?watts=12" for 127.0.0.1 at 2015-04-18 10:53:14 -0700
+Processing by EnergyController#index as HTML
+  Parameters: {"watts"=>"12"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/energy?watts=12" for 127.0.0.1 at 2015-04-18 10:53:45 -0700
+Processing by EnergyController#index as HTML
+  Parameters: {"watts"=>"12"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/energy?watts=12" for 127.0.0.1 at 2015-04-18 10:53:47 -0700
+Processing by EnergyController#index as HTML
+  Parameters: {"watts"=>"12"}
+Completed 200 OK in 0ms (Views: 0.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/energy?watts=12" for 127.0.0.1 at 2015-04-18 10:54:01 -0700
+Processing by EnergyController#index as HTML
+  Parameters: {"watts"=>"12"}
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/energy?watts=12" for 127.0.0.1 at 2015-04-18 10:54:37 -0700
+Processing by EnergyController#index as HTML
+  Parameters: {"watts"=>"12"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/energy?watts=1234567" for 127.0.0.1 at 2015-04-18 10:54:47 -0700
+Processing by EnergyController#index as HTML
+  Parameters: {"watts"=>"1234567"}
+Completed 200 OK in 0ms (Views: 0.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/energy?watts=" for 127.0.0.1 at 2015-04-18 10:54:54 -0700
+Processing by EnergyController#index as HTML
+  Parameters: {"watts"=>""}
+Completed 200 OK in 0ms (Views: 0.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/energy?watts=" for 127.0.0.1 at 2015-04-18 10:55:59 -0700
+Processing by EnergyController#index as HTML
+  Parameters: {"watts"=>""}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/energy?watts=1234" for 127.0.0.1 at 2015-04-18 10:56:02 -0700
+Processing by EnergyController#index as HTML
+  Parameters: {"watts"=>"1234"}
+Completed 200 OK in 0ms (Views: 0.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/energy?watts=1234" for 127.0.0.1 at 2015-04-18 10:56:30 -0700
+Processing by EnergyController#index as HTML
+  Parameters: {"watts"=>"1234"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/energy?watts=1234" for 127.0.0.1 at 2015-04-18 10:57:22 -0700
+Processing by EnergyController#index as HTML
+  Parameters: {"watts"=>"1234"}
+Completed 500 Internal Server Error in 6ms
+
+ArgumentError (wrong number of arguments (2 for 0)):
+  app/controllers/energy_controller.rb:9:in `index'
+
+
+  Rendered /Users/jbrooks/.rvm/gems/ruby-2.1.4/gems/actionpack-4.1.9/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.4ms)
+  Rendered /Users/jbrooks/.rvm/gems/ruby-2.1.4/gems/actionpack-4.1.9/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.7ms)
+  Rendered /Users/jbrooks/.rvm/gems/ruby-2.1.4/gems/actionpack-4.1.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /Users/jbrooks/.rvm/gems/ruby-2.1.4/gems/actionpack-4.1.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (10.0ms)
+
+
+Started GET "/energy?watts=1234" for 127.0.0.1 at 2015-04-18 10:57:34 -0700
+Processing by EnergyController#index as HTML
+  Parameters: {"watts"=>"1234"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/energy?watts=1234" for 127.0.0.1 at 2015-04-18 10:58:00 -0700
+Processing by EnergyController#index as HTML
+  Parameters: {"watts"=>"1234"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/energy" for 127.0.0.1 at 2015-04-18 10:58:03 -0700
+Processing by EnergyController#index as HTML
+Completed 500 Internal Server Error in 1ms
+
+ActionView::MissingTemplate (Missing template energy/index, application/index with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/jbrooks/Development/Web/Hackathon/wattsun/app/views"
+):
+  actionview (4.1.9) lib/action_view/path_set.rb:46:in `find'
+  actionview (4.1.9) lib/action_view/lookup_context.rb:124:in `find'
+  actionview (4.1.9) lib/action_view/renderer/abstract_renderer.rb:18:in `find_template'
+  actionview (4.1.9) lib/action_view/renderer/template_renderer.rb:41:in `determine_template'
+  actionview (4.1.9) lib/action_view/renderer/template_renderer.rb:8:in `render'
+  actionview (4.1.9) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (4.1.9) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (4.1.9) lib/action_view/rendering.rb:99:in `_render_template'
+  actionpack (4.1.9) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.1.9) lib/action_view/rendering.rb:82:in `render_to_body'
+  actionpack (4.1.9) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.1.9) lib/action_controller/metal/renderers.rb:32:in `render_to_body'
+  actionpack (4.1.9) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.1.9) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.1.9) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+  activesupport (4.1.9) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /Users/jbrooks/.rvm/rubies/ruby-2.1.4/lib/ruby/2.1.0/benchmark.rb:294:in `realtime'
+  activesupport (4.1.9) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.1.9) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+  actionpack (4.1.9) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+  activerecord (4.1.9) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.1.9) lib/action_controller/metal/instrumentation.rb:40:in `render'
+  actionpack (4.1.9) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.1.9) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.1.9) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.1.9) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.1.9) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.1.9) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.9) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.9) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.9) lib/active_support/callbacks.rb:229:in `call'
+  activesupport (4.1.9) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.9) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.9) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.9) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.9) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.9) lib/active_support/callbacks.rb:86:in `call'
+  activesupport (4.1.9) lib/active_support/callbacks.rb:86:in `run_callbacks'
+  actionpack (4.1.9) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.1.9) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.1.9) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.1.9) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.1.9) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.1.9) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.1.9) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.1.9) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.1.9) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.1.9) lib/abstract_controller/base.rb:136:in `process'
+  actionview (4.1.9) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.9) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.1.9) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.9) lib/action_controller/metal.rb:232:in `block in action'
+  actionpack (4.1.9) lib/action_dispatch/routing/route_set.rb:82:in `call'
+  actionpack (4.1.9) lib/action_dispatch/routing/route_set.rb:82:in `dispatch'
+  actionpack (4.1.9) lib/action_dispatch/routing/route_set.rb:50:in `call'
+  actionpack (4.1.9) lib/action_dispatch/journey/router.rb:73:in `block in call'
+  actionpack (4.1.9) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.9) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.9) lib/action_dispatch/routing/route_set.rb:685:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.9) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.9) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.9) lib/action_dispatch/middleware/cookies.rb:562:in `call'
+  activerecord (4.1.9) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.9) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.9) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.9) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.9) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.9) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.9) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.9) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.9) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.9) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.9) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.9) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.9) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.9) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.9) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.9) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.9) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.9) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.9) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.9) lib/rails/engine.rb:514:in `call'
+  railties (4.1.9) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/jbrooks/.rvm/rubies/ruby-2.1.4/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/jbrooks/.rvm/rubies/ruby-2.1.4/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/jbrooks/.rvm/rubies/ruby-2.1.4/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/jbrooks/.rvm/gems/ruby-2.1.4/gems/actionpack-4.1.9/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (0.4ms)
+
+
+Started GET "/energy" for 127.0.0.1 at 2015-04-18 10:58:06 -0700
+Processing by EnergyController#index as HTML
+Completed 500 Internal Server Error in 1ms
+
+ActionView::MissingTemplate (Missing template energy/index, application/index with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/jbrooks/Development/Web/Hackathon/wattsun/app/views"
+):
+  actionview (4.1.9) lib/action_view/path_set.rb:46:in `find'
+  actionview (4.1.9) lib/action_view/lookup_context.rb:124:in `find'
+  actionview (4.1.9) lib/action_view/renderer/abstract_renderer.rb:18:in `find_template'
+  actionview (4.1.9) lib/action_view/renderer/template_renderer.rb:41:in `determine_template'
+  actionview (4.1.9) lib/action_view/renderer/template_renderer.rb:8:in `render'
+  actionview (4.1.9) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (4.1.9) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (4.1.9) lib/action_view/rendering.rb:99:in `_render_template'
+  actionpack (4.1.9) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.1.9) lib/action_view/rendering.rb:82:in `render_to_body'
+  actionpack (4.1.9) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.1.9) lib/action_controller/metal/renderers.rb:32:in `render_to_body'
+  actionpack (4.1.9) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.1.9) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.1.9) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+  activesupport (4.1.9) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /Users/jbrooks/.rvm/rubies/ruby-2.1.4/lib/ruby/2.1.0/benchmark.rb:294:in `realtime'
+  activesupport (4.1.9) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.1.9) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+  actionpack (4.1.9) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+  activerecord (4.1.9) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.1.9) lib/action_controller/metal/instrumentation.rb:40:in `render'
+  actionpack (4.1.9) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.1.9) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.1.9) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.1.9) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.1.9) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.1.9) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.9) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.9) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.9) lib/active_support/callbacks.rb:229:in `call'
+  activesupport (4.1.9) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.9) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.9) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.9) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.9) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.9) lib/active_support/callbacks.rb:86:in `call'
+  activesupport (4.1.9) lib/active_support/callbacks.rb:86:in `run_callbacks'
+  actionpack (4.1.9) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.1.9) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.1.9) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.1.9) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.1.9) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.1.9) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.1.9) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.1.9) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.1.9) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.1.9) lib/abstract_controller/base.rb:136:in `process'
+  actionview (4.1.9) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.9) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.1.9) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.9) lib/action_controller/metal.rb:232:in `block in action'
+  actionpack (4.1.9) lib/action_dispatch/routing/route_set.rb:82:in `call'
+  actionpack (4.1.9) lib/action_dispatch/routing/route_set.rb:82:in `dispatch'
+  actionpack (4.1.9) lib/action_dispatch/routing/route_set.rb:50:in `call'
+  actionpack (4.1.9) lib/action_dispatch/journey/router.rb:73:in `block in call'
+  actionpack (4.1.9) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.9) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.9) lib/action_dispatch/routing/route_set.rb:685:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.9) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.9) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.9) lib/action_dispatch/middleware/cookies.rb:562:in `call'
+  activerecord (4.1.9) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.9) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.9) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.9) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.9) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.9) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.9) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.9) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.9) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.9) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.9) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.9) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.9) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.9) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.9) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.9) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.9) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.9) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.9) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.9) lib/rails/engine.rb:514:in `call'
+  railties (4.1.9) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/jbrooks/.rvm/rubies/ruby-2.1.4/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/jbrooks/.rvm/rubies/ruby-2.1.4/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/jbrooks/.rvm/rubies/ruby-2.1.4/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/jbrooks/.rvm/gems/ruby-2.1.4/gems/actionpack-4.1.9/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (0.4ms)
+
+
+Started GET "/energy" for 127.0.0.1 at 2015-04-18 10:58:08 -0700
+Processing by EnergyController#index as HTML
+Completed 500 Internal Server Error in 1ms
+
+ActionView::MissingTemplate (Missing template energy/index, application/index with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/jbrooks/Development/Web/Hackathon/wattsun/app/views"
+):
+  actionview (4.1.9) lib/action_view/path_set.rb:46:in `find'
+  actionview (4.1.9) lib/action_view/lookup_context.rb:124:in `find'
+  actionview (4.1.9) lib/action_view/renderer/abstract_renderer.rb:18:in `find_template'
+  actionview (4.1.9) lib/action_view/renderer/template_renderer.rb:41:in `determine_template'
+  actionview (4.1.9) lib/action_view/renderer/template_renderer.rb:8:in `render'
+  actionview (4.1.9) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (4.1.9) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (4.1.9) lib/action_view/rendering.rb:99:in `_render_template'
+  actionpack (4.1.9) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.1.9) lib/action_view/rendering.rb:82:in `render_to_body'
+  actionpack (4.1.9) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.1.9) lib/action_controller/metal/renderers.rb:32:in `render_to_body'
+  actionpack (4.1.9) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.1.9) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.1.9) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+  activesupport (4.1.9) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /Users/jbrooks/.rvm/rubies/ruby-2.1.4/lib/ruby/2.1.0/benchmark.rb:294:in `realtime'
+  activesupport (4.1.9) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.1.9) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+  actionpack (4.1.9) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+  activerecord (4.1.9) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.1.9) lib/action_controller/metal/instrumentation.rb:40:in `render'
+  actionpack (4.1.9) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.1.9) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.1.9) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.1.9) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.1.9) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.1.9) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.9) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.9) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.9) lib/active_support/callbacks.rb:229:in `call'
+  activesupport (4.1.9) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.9) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.9) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.9) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.9) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.9) lib/active_support/callbacks.rb:86:in `call'
+  activesupport (4.1.9) lib/active_support/callbacks.rb:86:in `run_callbacks'
+  actionpack (4.1.9) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.1.9) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.1.9) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.1.9) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.1.9) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.1.9) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.1.9) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.1.9) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.1.9) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.1.9) lib/abstract_controller/base.rb:136:in `process'
+  actionview (4.1.9) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.9) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.1.9) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.9) lib/action_controller/metal.rb:232:in `block in action'
+  actionpack (4.1.9) lib/action_dispatch/routing/route_set.rb:82:in `call'
+  actionpack (4.1.9) lib/action_dispatch/routing/route_set.rb:82:in `dispatch'
+  actionpack (4.1.9) lib/action_dispatch/routing/route_set.rb:50:in `call'
+  actionpack (4.1.9) lib/action_dispatch/journey/router.rb:73:in `block in call'
+  actionpack (4.1.9) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.9) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.9) lib/action_dispatch/routing/route_set.rb:685:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.9) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.9) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.9) lib/action_dispatch/middleware/cookies.rb:562:in `call'
+  activerecord (4.1.9) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.9) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.9) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.9) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.9) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.9) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.9) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.9) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.9) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.9) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.9) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.9) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.9) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.9) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.9) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.9) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.9) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.9) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.9) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.9) lib/rails/engine.rb:514:in `call'
+  railties (4.1.9) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/jbrooks/.rvm/rubies/ruby-2.1.4/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/jbrooks/.rvm/rubies/ruby-2.1.4/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/jbrooks/.rvm/rubies/ruby-2.1.4/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/jbrooks/.rvm/gems/ruby-2.1.4/gems/actionpack-4.1.9/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (0.3ms)
+
+
+Started GET "/energy" for 127.0.0.1 at 2015-04-18 10:58:15 -0700
+Processing by EnergyController#index as HTML
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/energy?watts=1234" for 127.0.0.1 at 2015-04-18 10:58:27 -0700
+Processing by EnergyController#index as HTML
+  Parameters: {"watts"=>"1234"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/energy?watts=1234" for 127.0.0.1 at 2015-04-18 10:59:44 -0700
+Processing by EnergyController#index as HTML
+  Parameters: {"watts"=>"1234"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/energy?watts=1234" for 127.0.0.1 at 2015-04-18 10:59:52 -0700
+Processing by EnergyController#index as HTML
+  Parameters: {"watts"=>"1234"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/energy?watts=1234" for 127.0.0.1 at 2015-04-18 11:00:04 -0700
+Processing by EnergyController#index as HTML
+  Parameters: {"watts"=>"1234"}
+Completed 500 Internal Server Error in 1ms
+
+NoMethodError (undefined method `to_i' for #<Watt:0x007fd30d3e29b0 @watts="1234">):
+  app/controllers/energy_controller.rb:9:in `index'
+
+
+  Rendered /Users/jbrooks/.rvm/gems/ruby-2.1.4/gems/actionpack-4.1.9/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.4ms)
+  Rendered /Users/jbrooks/.rvm/gems/ruby-2.1.4/gems/actionpack-4.1.9/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.7ms)
+  Rendered /Users/jbrooks/.rvm/gems/ruby-2.1.4/gems/actionpack-4.1.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/jbrooks/.rvm/gems/ruby-2.1.4/gems/actionpack-4.1.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (9.2ms)
+
+
+Started GET "/energy?watts=1234" for 127.0.0.1 at 2015-04-18 11:00:32 -0700
+Processing by EnergyController#index as HTML
+  Parameters: {"watts"=>"1234"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/energy?watts=1234" for 127.0.0.1 at 2015-04-18 11:00:54 -0700
+Processing by EnergyController#index as HTML
+  Parameters: {"watts"=>"1234"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/energy?watts=1234" for 127.0.0.1 at 2015-04-18 11:02:07 -0700
+Processing by EnergyController#index as HTML
+  Parameters: {"watts"=>"1234"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/energy?watts=1234" for 127.0.0.1 at 2015-04-18 11:08:18 -0700
+Processing by EnergyController#index as HTML
+  Parameters: {"watts"=>"1234"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/energy?watts=1234" for 127.0.0.1 at 2015-04-18 11:08:36 -0700
+Processing by EnergyController#index as HTML
+  Parameters: {"watts"=>"1234"}
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/energy?watts=1234" for 127.0.0.1 at 2015-04-18 11:10:34 -0700
+Processing by EnergyController#index as HTML
+  Parameters: {"watts"=>"1234"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/energy?watts=1234" for 127.0.0.1 at 2015-04-18 11:12:19 -0700
+Processing by EnergyController#index as HTML
+  Parameters: {"watts"=>"1234"}
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/energy?watts=1234" for 127.0.0.1 at 2015-04-18 11:13:26 -0700
+Processing by EnergyController#index as HTML
+  Parameters: {"watts"=>"1234"}
+Completed 500 Internal Server Error in 1ms
+
+TypeError (no implicit conversion of Fixnum into String):
+  app/models/watt.rb:17:in `sprintf'
+  app/models/watt.rb:17:in `to_gw'
+  app/controllers/energy_controller.rb:10:in `index'
+
+
+  Rendered /Users/jbrooks/.rvm/gems/ruby-2.1.4/gems/actionpack-4.1.9/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
+  Rendered /Users/jbrooks/.rvm/gems/ruby-2.1.4/gems/actionpack-4.1.9/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.7ms)
+  Rendered /Users/jbrooks/.rvm/gems/ruby-2.1.4/gems/actionpack-4.1.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /Users/jbrooks/.rvm/gems/ruby-2.1.4/gems/actionpack-4.1.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.9ms)
+
+
+Started GET "/energy?watts=1234" for 127.0.0.1 at 2015-04-18 11:14:46 -0700
+Processing by EnergyController#index as HTML
+  Parameters: {"watts"=>"1234"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/energy?watts=1234" for 127.0.0.1 at 2015-04-18 11:20:49 -0700
+Processing by EnergyController#index as HTML
+  Parameters: {"watts"=>"1234"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/energy?watts=1234" for 127.0.0.1 at 2015-04-18 11:23:00 -0700
+Processing by EnergyController#index as HTML
+  Parameters: {"watts"=>"1234"}
+Completed 500 Internal Server Error in 1ms
+
+ArgumentError (wrong number of arguments (2 for 0)):
+  app/controllers/energy_controller.rb:25:in `render_error'
+  app/controllers/energy_controller.rb:20:in `index'
+
+
+  Rendered /Users/jbrooks/.rvm/gems/ruby-2.1.4/gems/actionpack-4.1.9/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.3ms)
+  Rendered /Users/jbrooks/.rvm/gems/ruby-2.1.4/gems/actionpack-4.1.9/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.7ms)
+  Rendered /Users/jbrooks/.rvm/gems/ruby-2.1.4/gems/actionpack-4.1.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/jbrooks/.rvm/gems/ruby-2.1.4/gems/actionpack-4.1.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (9.3ms)
+
+
+Started GET "/energy?watts=1234" for 127.0.0.1 at 2015-04-18 11:23:12 -0700
+Processing by EnergyController#index as HTML
+  Parameters: {"watts"=>"1234"}
+Completed 500 Internal Server Error in 1ms
+
+AbstractController::DoubleRenderError (Render and/or redirect were called multiple times in this action. Please note that you may only call render OR redirect, and at most once per action. Also note that neither redirect nor render terminate execution of the action, so if you want to exit an action after redirecting, you need to do something like "redirect_to(...) and return".):
+  app/controllers/energy_controller.rb:25:in `render_error'
+  app/controllers/energy_controller.rb:20:in `index'
+
+
+  Rendered /Users/jbrooks/.rvm/gems/ruby-2.1.4/gems/actionpack-4.1.9/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.4ms)
+  Rendered /Users/jbrooks/.rvm/gems/ruby-2.1.4/gems/actionpack-4.1.9/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.8ms)
+  Rendered /Users/jbrooks/.rvm/gems/ruby-2.1.4/gems/actionpack-4.1.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /Users/jbrooks/.rvm/gems/ruby-2.1.4/gems/actionpack-4.1.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (9.2ms)
+
+
+Started GET "/energy?watts=1234" for 127.0.0.1 at 2015-04-18 11:28:28 -0700
+Processing by EnergyController#index as HTML
+  Parameters: {"watts"=>"1234"}
+Completed 500 Internal Server Error in 1ms
+
+AbstractController::DoubleRenderError (Render and/or redirect were called multiple times in this action. Please note that you may only call render OR redirect, and at most once per action. Also note that neither redirect nor render terminate execution of the action, so if you want to exit an action after redirecting, you need to do something like "redirect_to(...) and return".):
+  app/controllers/energy_controller.rb:32:in `render_error'
+  app/controllers/energy_controller.rb:18:in `index'
+
+
+  Rendered /Users/jbrooks/.rvm/gems/ruby-2.1.4/gems/actionpack-4.1.9/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.4ms)
+  Rendered /Users/jbrooks/.rvm/gems/ruby-2.1.4/gems/actionpack-4.1.9/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.7ms)
+  Rendered /Users/jbrooks/.rvm/gems/ruby-2.1.4/gems/actionpack-4.1.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /Users/jbrooks/.rvm/gems/ruby-2.1.4/gems/actionpack-4.1.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (9.2ms)
+
+
+Started GET "/energy?watts=1234" for 127.0.0.1 at 2015-04-18 11:28:50 -0700
+Processing by EnergyController#index as HTML
+  Parameters: {"watts"=>"1234"}
+Completed 404 Not Found in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/energy?watts=1234" for 127.0.0.1 at 2015-04-18 11:29:08 -0700
+Processing by EnergyController#index as HTML
+  Parameters: {"watts"=>"1234"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/energy?watts=" for 127.0.0.1 at 2015-04-18 11:29:11 -0700
+Processing by EnergyController#index as HTML
+  Parameters: {"watts"=>""}
+Completed 404 Not Found in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/energy?watts=" for 127.0.0.1 at 2015-04-18 11:32:23 -0700
+Processing by EnergyController#index as HTML
+  Parameters: {"watts"=>""}
+Completed 404 Not Found in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/energy?watts=asdf" for 127.0.0.1 at 2015-04-18 11:32:26 -0700
+Processing by EnergyController#index as HTML
+  Parameters: {"watts"=>"asdf"}
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/energy?watts=asdf" for 127.0.0.1 at 2015-04-18 11:37:09 -0700
+Processing by EnergyController#index as HTML
+  Parameters: {"watts"=>"asdf"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/energy?watts=1234" for 127.0.0.1 at 2015-04-18 11:37:18 -0700
+Processing by EnergyController#index as HTML
+  Parameters: {"watts"=>"1234"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/energy?watts=1234123412341234" for 127.0.0.1 at 2015-04-18 11:37:37 -0700
+Processing by EnergyController#index as HTML
+  Parameters: {"watts"=>"1234123412341234"}
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/energy?kilowatts=1234" for 127.0.0.1 at 2015-04-18 11:44:35 -0700
+Processing by EnergyController#index as HTML
+  Parameters: {"kilowatts"=>"1234"}
+Completed 404 Not Found in 6ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/energy?kilowatts=1234" for 127.0.0.1 at 2015-04-18 11:47:10 -0700
+Processing by EnergyController#index as HTML
+  Parameters: {"kilowatts"=>"1234"}
+Completed 500 Internal Server Error in 1ms
+
+NoMethodError (undefined method `to_mw' for #<Kilowatt:0x007fe72723bb10 @kilowatts=1234>):
+  app/controllers/energy_controller.rb:12:in `index'
+
+
+  Rendered /Users/jbrooks/.rvm/gems/ruby-2.1.4/gems/actionpack-4.1.9/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.4ms)
+  Rendered /Users/jbrooks/.rvm/gems/ruby-2.1.4/gems/actionpack-4.1.9/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.7ms)
+  Rendered /Users/jbrooks/.rvm/gems/ruby-2.1.4/gems/actionpack-4.1.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.5ms)
+  Rendered /Users/jbrooks/.rvm/gems/ruby-2.1.4/gems/actionpack-4.1.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (9.4ms)
+
+
+Started GET "/energy?kilowatts=1234" for 127.0.0.1 at 2015-04-18 11:48:02 -0700
+Processing by EnergyController#index as HTML
+  Parameters: {"kilowatts"=>"1234"}
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/energy?kilowatts=1234" for 127.0.0.1 at 2015-04-18 11:48:41 -0700
+Processing by EnergyController#index as HTML
+  Parameters: {"kilowatts"=>"1234"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/energy?kilowatts=1234" for 127.0.0.1 at 2015-04-18 11:53:29 -0700
+Processing by EnergyController#index as HTML
+  Parameters: {"kilowatts"=>"1234"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/energy?kilowatts=1234" for 127.0.0.1 at 2015-04-18 11:53:37 -0700
+Processing by EnergyController#index as HTML
+  Parameters: {"kilowatts"=>"1234"}
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/energy?watts=123456789" for 127.0.0.1 at 2015-04-18 11:53:52 -0700
+Processing by EnergyController#index as HTML
+  Parameters: {"watts"=>"123456789"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/energy?kilowatts=123456789" for 127.0.0.1 at 2015-04-18 11:54:01 -0700
+Processing by EnergyController#index as HTML
+  Parameters: {"kilowatts"=>"123456789"}
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/energy?megawatts=123456789" for 127.0.0.1 at 2015-04-18 11:54:08 -0700
+Processing by EnergyController#index as HTML
+  Parameters: {"megawatts"=>"123456789"}
+Completed 500 Internal Server Error in 1ms
+
+NoMethodError (undefined method `to' for #<Megawatt:0x007fe7223775b0 @megawatts=123456789>):
+  app/controllers/energy_controller.rb:15:in `index'
+
+
+  Rendered /Users/jbrooks/.rvm/gems/ruby-2.1.4/gems/actionpack-4.1.9/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
+  Rendered /Users/jbrooks/.rvm/gems/ruby-2.1.4/gems/actionpack-4.1.9/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.7ms)
+  Rendered /Users/jbrooks/.rvm/gems/ruby-2.1.4/gems/actionpack-4.1.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/jbrooks/.rvm/gems/ruby-2.1.4/gems/actionpack-4.1.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (10.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-18 11:57:53 -0700
+Processing by HomeController#show as HTML
+  Rendered home/show.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 43ms (Views: 43.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/energy.css?body=1" for 127.0.0.1 at 2015-04-18 11:57:53 -0700
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2015-04-18 11:57:53 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-18 11:57:53 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-18 11:57:53 -0700
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2015-04-18 11:57:53 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-04-18 11:57:53 -0700
+
+
+Started GET "/assets/energy.js?body=1" for 127.0.0.1 at 2015-04-18 11:57:53 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-18 11:57:53 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-18 11:57:53 -0700
+
+
+Started GET "/energy" for 127.0.0.1 at 2015-04-18 11:57:57 -0700
+Processing by EnergyController#index as HTML
+Completed 404 Not Found in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/energy?watts=12345" for 127.0.0.1 at 2015-04-18 11:58:02 -0700
+Processing by EnergyController#index as HTML
+  Parameters: {"watts"=>"12345"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/energy?kilowatts=12345" for 127.0.0.1 at 2015-04-18 11:58:13 -0700
+Processing by EnergyController#index as HTML
+  Parameters: {"kilowatts"=>"12345"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/energy?megawatts=12345" for 127.0.0.1 at 2015-04-18 11:58:17 -0700
+Processing by EnergyController#index as HTML
+  Parameters: {"megawatts"=>"12345"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/energy?watts=12345" for 127.0.0.1 at 2015-04-18 12:03:43 -0700
+Processing by EnergyController#index as HTML
+  Parameters: {"watts"=>"12345"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/energy?watts=12345&hours=1" for 127.0.0.1 at 2015-04-18 12:03:49 -0700
+Processing by EnergyController#index as HTML
+  Parameters: {"watts"=>"12345", "hours"=>"1"}
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/energy?watts=12345&hours=1" for 127.0.0.1 at 2015-04-18 12:04:26 -0700
+Processing by EnergyController#index as HTML
+  Parameters: {"watts"=>"12345", "hours"=>"1"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/energy?watts=12345&hours=1" for 127.0.0.1 at 2015-04-18 12:04:28 -0700
+Processing by EnergyController#index as HTML
+  Parameters: {"watts"=>"12345", "hours"=>"1"}
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/energy?megawatts=123456789" for 127.0.0.1 at 2015-04-18 12:07:21 -0700
+Processing by EnergyController#index as HTML
+  Parameters: {"megawatts"=>"123456789"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/energy?watts=123456789&hours=123" for 127.0.0.1 at 2015-04-18 12:07:28 -0700
+Processing by EnergyController#index as HTML
+  Parameters: {"watts"=>"123456789", "hours"=>"123"}
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/energy?watts=123456789&hours=123" for 127.0.0.1 at 2015-04-18 12:08:43 -0700
+Processing by EnergyController#index as HTML
+  Parameters: {"watts"=>"123456789", "hours"=>"123"}
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/energy?watts=123456789&hours=123" for 127.0.0.1 at 2015-04-18 12:08:44 -0700
+Processing by EnergyController#index as HTML
+  Parameters: {"watts"=>"123456789", "hours"=>"123"}
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/energy?watts=123456789" for 127.0.0.1 at 2015-04-18 12:08:50 -0700
+Processing by EnergyController#index as HTML
+  Parameters: {"watts"=>"123456789"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/energy?watts=123456789&hours=123" for 127.0.0.1 at 2015-04-18 12:08:53 -0700
+Processing by EnergyController#index as HTML
+  Parameters: {"watts"=>"123456789", "hours"=>"123"}
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/energy?watts=123456789&hours=123" for 127.0.0.1 at 2015-04-18 12:17:09 -0700
+Processing by EnergyController#index as HTML
+  Parameters: {"watts"=>"123456789", "hours"=>"123"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/energy?watts=123456789" for 127.0.0.1 at 2015-04-18 12:17:13 -0700
+Processing by EnergyController#index as HTML
+  Parameters: {"watts"=>"123456789"}
+Completed 200 OK in 1ms (Views: 0.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/energy?watts=123456789" for 127.0.0.1 at 2015-04-18 12:17:49 -0700
+Processing by EnergyController#index as HTML
+  Parameters: {"watts"=>"123456789"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/energy?watts=123456789" for 127.0.0.1 at 2015-04-18 12:22:36 -0700
+Processing by EnergyController#index as HTML
+  Parameters: {"watts"=>"123456789"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/energy?watts=123456789&hours=123" for 127.0.0.1 at 2015-04-18 12:22:43 -0700
+Processing by EnergyController#index as HTML
+  Parameters: {"watts"=>"123456789", "hours"=>"123"}
+Completed 200 OK in 1ms (Views: 0.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/energy?watts=123456789&hours=123" for 127.0.0.1 at 2015-04-18 12:24:34 -0700
+Processing by EnergyController#index as HTML
+  Parameters: {"watts"=>"123456789", "hours"=>"123"}
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/energy?watts=123456789&hours=123" for 127.0.0.1 at 2015-04-18 12:25:37 -0700
+
+ActionController::RoutingError (No route matches [GET] "/energy"):
+  actionpack (4.1.9) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.9) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.9) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.9) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.9) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.9) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.9) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.9) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.9) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.9) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.9) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.9) lib/rails/engine.rb:514:in `call'
+  railties (4.1.9) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/jbrooks/.rvm/rubies/ruby-2.1.4/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/jbrooks/.rvm/rubies/ruby-2.1.4/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/jbrooks/.rvm/rubies/ruby-2.1.4/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/jbrooks/.rvm/gems/ruby-2.1.4/gems/actionpack-4.1.9/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.7ms)
+  Rendered /Users/jbrooks/.rvm/gems/ruby-2.1.4/gems/actionpack-4.1.9/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.7ms)
+  Rendered /Users/jbrooks/.rvm/gems/ruby-2.1.4/gems/actionpack-4.1.9/lib/action_dispatch/middleware/templates/routes/_table.html.erb (5.6ms)
+  Rendered /Users/jbrooks/.rvm/gems/ruby-2.1.4/gems/actionpack-4.1.9/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (19.5ms)
+
+
+Started GET "/energy?watts=123456789&hours=123" for 127.0.0.1 at 2015-04-18 12:25:51 -0700
+
+ActionController::RoutingError (No route matches [GET] "/energy"):
+  actionpack (4.1.9) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.9) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.9) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.9) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.9) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.9) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.9) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.9) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.9) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.9) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.9) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.9) lib/rails/engine.rb:514:in `call'
+  railties (4.1.9) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/jbrooks/.rvm/rubies/ruby-2.1.4/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/jbrooks/.rvm/rubies/ruby-2.1.4/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/jbrooks/.rvm/rubies/ruby-2.1.4/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/jbrooks/.rvm/gems/ruby-2.1.4/gems/actionpack-4.1.9/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.7ms)
+  Rendered /Users/jbrooks/.rvm/gems/ruby-2.1.4/gems/actionpack-4.1.9/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.6ms)
+  Rendered /Users/jbrooks/.rvm/gems/ruby-2.1.4/gems/actionpack-4.1.9/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.7ms)
+  Rendered /Users/jbrooks/.rvm/gems/ruby-2.1.4/gems/actionpack-4.1.9/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (10.4ms)
+
+
+Started GET "/energy?watts=123456789&hours=123" for 127.0.0.1 at 2015-04-18 12:25:59 -0700
+
+ActionController::RoutingError (No route matches [GET] "/energy"):
+  actionpack (4.1.9) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.9) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.9) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.9) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.9) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.9) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.9) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.9) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.9) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.9) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.9) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.9) lib/rails/engine.rb:514:in `call'
+  railties (4.1.9) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/jbrooks/.rvm/rubies/ruby-2.1.4/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/jbrooks/.rvm/rubies/ruby-2.1.4/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/jbrooks/.rvm/rubies/ruby-2.1.4/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/jbrooks/.rvm/gems/ruby-2.1.4/gems/actionpack-4.1.9/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.7ms)
+  Rendered /Users/jbrooks/.rvm/gems/ruby-2.1.4/gems/actionpack-4.1.9/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.6ms)
+  Rendered /Users/jbrooks/.rvm/gems/ruby-2.1.4/gems/actionpack-4.1.9/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.8ms)
+  Rendered /Users/jbrooks/.rvm/gems/ruby-2.1.4/gems/actionpack-4.1.9/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (10.0ms)
+
+
+Started GET "/energy/watts=123456789&hours=123" for 127.0.0.1 at 2015-04-18 12:26:10 -0700
+
+ActionController::RoutingError (uninitialized constant Energy):
+  activesupport (4.1.9) lib/active_support/inflector/methods.rb:238:in `const_get'
+  activesupport (4.1.9) lib/active_support/inflector/methods.rb:238:in `block in constantize'
+  activesupport (4.1.9) lib/active_support/inflector/methods.rb:236:in `each'
+  activesupport (4.1.9) lib/active_support/inflector/methods.rb:236:in `inject'
+  activesupport (4.1.9) lib/active_support/inflector/methods.rb:236:in `constantize'
+  actionpack (4.1.9) lib/action_dispatch/routing/route_set.rb:78:in `controller_reference'
+  actionpack (4.1.9) lib/action_dispatch/routing/route_set.rb:68:in `controller'
+  actionpack (4.1.9) lib/action_dispatch/routing/route_set.rb:46:in `call'
+  actionpack (4.1.9) lib/action_dispatch/journey/router.rb:73:in `block in call'
+  actionpack (4.1.9) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.9) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.9) lib/action_dispatch/routing/route_set.rb:685:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.9) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.9) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.9) lib/action_dispatch/middleware/cookies.rb:562:in `call'
+  activerecord (4.1.9) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.9) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.9) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.9) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.9) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.9) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.9) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.9) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.9) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.9) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.9) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.9) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.9) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.9) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.9) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.9) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.9) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.9) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.9) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.9) lib/rails/engine.rb:514:in `call'
+  railties (4.1.9) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/jbrooks/.rvm/rubies/ruby-2.1.4/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/jbrooks/.rvm/rubies/ruby-2.1.4/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/jbrooks/.rvm/rubies/ruby-2.1.4/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/jbrooks/.rvm/gems/ruby-2.1.4/gems/actionpack-4.1.9/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.7ms)
+  Rendered /Users/jbrooks/.rvm/gems/ruby-2.1.4/gems/actionpack-4.1.9/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.5ms)
+  Rendered /Users/jbrooks/.rvm/gems/ruby-2.1.4/gems/actionpack-4.1.9/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.7ms)
+  Rendered /Users/jbrooks/.rvm/gems/ruby-2.1.4/gems/actionpack-4.1.9/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (10.8ms)
+
+
+Started GET "/energy/watts=123456789&hours=123" for 127.0.0.1 at 2015-04-18 12:27:13 -0700
+
+ArgumentError (Missing :action key on routes definition, please check your routes.):
+  config/routes.rb:5:in `block (2 levels) in <top (required)>'
+  config/routes.rb:4:in `block in <top (required)>'
+  config/routes.rb:1:in `<top (required)>'
+
+
+  Rendered /Users/jbrooks/.rvm/gems/ruby-2.1.4/gems/actionpack-4.1.9/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
+  Rendered /Users/jbrooks/.rvm/gems/ruby-2.1.4/gems/actionpack-4.1.9/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.8ms)
+  Rendered /Users/jbrooks/.rvm/gems/ruby-2.1.4/gems/actionpack-4.1.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /Users/jbrooks/.rvm/gems/ruby-2.1.4/gems/actionpack-4.1.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (9.7ms)
+
+
+Started GET "/energy/watts=123456789&hours=123" for 127.0.0.1 at 2015-04-18 12:27:23 -0700
+
+ArgumentError (Missing :action key on routes definition, please check your routes.):
+  config/routes.rb:5:in `block (2 levels) in <top (required)>'
+  config/routes.rb:4:in `block in <top (required)>'
+  config/routes.rb:1:in `<top (required)>'
+
+
+  Rendered /Users/jbrooks/.rvm/gems/ruby-2.1.4/gems/actionpack-4.1.9/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.4ms)
+  Rendered /Users/jbrooks/.rvm/gems/ruby-2.1.4/gems/actionpack-4.1.9/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.7ms)
+  Rendered /Users/jbrooks/.rvm/gems/ruby-2.1.4/gems/actionpack-4.1.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.5ms)
+  Rendered /Users/jbrooks/.rvm/gems/ruby-2.1.4/gems/actionpack-4.1.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.9ms)
+
+
+Started GET "/energy/watts=123456789&hours=123" for 127.0.0.1 at 2015-04-18 12:27:33 -0700
+
+ActionController::RoutingError (uninitialized constant Energy):
+  activesupport (4.1.9) lib/active_support/inflector/methods.rb:238:in `const_get'
+  activesupport (4.1.9) lib/active_support/inflector/methods.rb:238:in `block in constantize'
+  activesupport (4.1.9) lib/active_support/inflector/methods.rb:236:in `each'
+  activesupport (4.1.9) lib/active_support/inflector/methods.rb:236:in `inject'
+  activesupport (4.1.9) lib/active_support/inflector/methods.rb:236:in `constantize'
+  actionpack (4.1.9) lib/action_dispatch/routing/route_set.rb:78:in `controller_reference'
+  actionpack (4.1.9) lib/action_dispatch/routing/route_set.rb:68:in `controller'
+  actionpack (4.1.9) lib/action_dispatch/routing/route_set.rb:46:in `call'
+  actionpack (4.1.9) lib/action_dispatch/journey/router.rb:73:in `block in call'
+  actionpack (4.1.9) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.9) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.9) lib/action_dispatch/routing/route_set.rb:685:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.9) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.9) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.9) lib/action_dispatch/middleware/cookies.rb:562:in `call'
+  activerecord (4.1.9) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.9) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.9) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.9) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.9) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.9) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.9) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.9) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.9) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.9) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.9) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.9) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.9) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.9) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.9) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.9) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.9) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.9) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.9) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.9) lib/rails/engine.rb:514:in `call'
+  railties (4.1.9) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/jbrooks/.rvm/rubies/ruby-2.1.4/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/jbrooks/.rvm/rubies/ruby-2.1.4/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/jbrooks/.rvm/rubies/ruby-2.1.4/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/jbrooks/.rvm/gems/ruby-2.1.4/gems/actionpack-4.1.9/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered /Users/jbrooks/.rvm/gems/ruby-2.1.4/gems/actionpack-4.1.9/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.6ms)
+  Rendered /Users/jbrooks/.rvm/gems/ruby-2.1.4/gems/actionpack-4.1.9/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.7ms)
+  Rendered /Users/jbrooks/.rvm/gems/ruby-2.1.4/gems/actionpack-4.1.9/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (12.7ms)
+
+
+Started GET "/energy/watts=123456789&hours=123" for 127.0.0.1 at 2015-04-18 12:27:45 -0700
+
+ActionController::RoutingError (No route matches [GET] "/energy/watts=123456789&hours=123"):
+  actionpack (4.1.9) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.9) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.9) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.9) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.9) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.9) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.9) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.9) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.9) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.9) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.9) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.9) lib/rails/engine.rb:514:in `call'
+  railties (4.1.9) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/jbrooks/.rvm/rubies/ruby-2.1.4/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/jbrooks/.rvm/rubies/ruby-2.1.4/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/jbrooks/.rvm/rubies/ruby-2.1.4/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/jbrooks/.rvm/gems/ruby-2.1.4/gems/actionpack-4.1.9/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.6ms)
+  Rendered /Users/jbrooks/.rvm/gems/ruby-2.1.4/gems/actionpack-4.1.9/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.5ms)
+  Rendered /Users/jbrooks/.rvm/gems/ruby-2.1.4/gems/actionpack-4.1.9/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.7ms)
+  Rendered /Users/jbrooks/.rvm/gems/ruby-2.1.4/gems/actionpack-4.1.9/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (9.6ms)
+
+
+Started GET "/energy?watts=123456789&hours=123" for 127.0.0.1 at 2015-04-18 12:27:50 -0700
+Processing by EnergyController#index as HTML
+  Parameters: {"watts"=>"123456789", "hours"=>"123"}
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/energy?watts=123456789&hours=123" for 127.0.0.1 at 2015-04-18 12:28:38 -0700
+
+ActionController::RoutingError (uninitialized constant Energy):
+  activesupport (4.1.9) lib/active_support/inflector/methods.rb:238:in `const_get'
+  activesupport (4.1.9) lib/active_support/inflector/methods.rb:238:in `block in constantize'
+  activesupport (4.1.9) lib/active_support/inflector/methods.rb:236:in `each'
+  activesupport (4.1.9) lib/active_support/inflector/methods.rb:236:in `inject'
+  activesupport (4.1.9) lib/active_support/inflector/methods.rb:236:in `constantize'
+  actionpack (4.1.9) lib/action_dispatch/routing/route_set.rb:78:in `controller_reference'
+  actionpack (4.1.9) lib/action_dispatch/routing/route_set.rb:68:in `controller'
+  actionpack (4.1.9) lib/action_dispatch/routing/route_set.rb:46:in `call'
+  actionpack (4.1.9) lib/action_dispatch/journey/router.rb:73:in `block in call'
+  actionpack (4.1.9) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.9) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.9) lib/action_dispatch/routing/route_set.rb:685:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.9) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.9) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.9) lib/action_dispatch/middleware/cookies.rb:562:in `call'
+  activerecord (4.1.9) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.9) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.9) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.9) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.9) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.9) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.9) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.9) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.9) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.9) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.9) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.9) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.9) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.9) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.9) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.9) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.9) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.9) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.9) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.9) lib/rails/engine.rb:514:in `call'
+  railties (4.1.9) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/jbrooks/.rvm/rubies/ruby-2.1.4/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/jbrooks/.rvm/rubies/ruby-2.1.4/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/jbrooks/.rvm/rubies/ruby-2.1.4/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/jbrooks/.rvm/gems/ruby-2.1.4/gems/actionpack-4.1.9/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.6ms)
+  Rendered /Users/jbrooks/.rvm/gems/ruby-2.1.4/gems/actionpack-4.1.9/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.8ms)
+  Rendered /Users/jbrooks/.rvm/gems/ruby-2.1.4/gems/actionpack-4.1.9/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.7ms)
+  Rendered /Users/jbrooks/.rvm/gems/ruby-2.1.4/gems/actionpack-4.1.9/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (12.2ms)
+
+
+Started GET "/energy/watts/123" for 127.0.0.1 at 2015-04-18 12:28:43 -0700
+
+ActionController::RoutingError (No route matches [GET] "/energy/watts/123"):
+  actionpack (4.1.9) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.9) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.9) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.9) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.9) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.9) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.9) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.9) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.9) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.9) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.9) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.9) lib/rails/engine.rb:514:in `call'
+  railties (4.1.9) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/jbrooks/.rvm/rubies/ruby-2.1.4/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/jbrooks/.rvm/rubies/ruby-2.1.4/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/jbrooks/.rvm/rubies/ruby-2.1.4/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/jbrooks/.rvm/gems/ruby-2.1.4/gems/actionpack-4.1.9/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.8ms)
+  Rendered /Users/jbrooks/.rvm/gems/ruby-2.1.4/gems/actionpack-4.1.9/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.8ms)
+  Rendered /Users/jbrooks/.rvm/gems/ruby-2.1.4/gems/actionpack-4.1.9/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.6ms)
+  Rendered /Users/jbrooks/.rvm/gems/ruby-2.1.4/gems/actionpack-4.1.9/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (11.2ms)
+
+
+Started GET "/energy/watts/123" for 127.0.0.1 at 2015-04-18 12:28:59 -0700
+
+ArgumentError (Missing :action key on routes definition, please check your routes.):
+  config/routes.rb:5:in `block (2 levels) in <top (required)>'
+  config/routes.rb:4:in `block in <top (required)>'
+  config/routes.rb:1:in `<top (required)>'
+
+
+  Rendered /Users/jbrooks/.rvm/gems/ruby-2.1.4/gems/actionpack-4.1.9/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
+  Rendered /Users/jbrooks/.rvm/gems/ruby-2.1.4/gems/actionpack-4.1.9/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /Users/jbrooks/.rvm/gems/ruby-2.1.4/gems/actionpack-4.1.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /Users/jbrooks/.rvm/gems/ruby-2.1.4/gems/actionpack-4.1.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (13.2ms)
+
+
+Started GET "/energy/watts/123" for 127.0.0.1 at 2015-04-18 12:29:15 -0700
+
+ActionController::RoutingError (No route matches [GET] "/energy/watts/123"):
+  actionpack (4.1.9) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.9) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.9) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.9) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.9) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.9) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.9) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.9) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.9) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.9) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.9) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.9) lib/rails/engine.rb:514:in `call'
+  railties (4.1.9) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/jbrooks/.rvm/rubies/ruby-2.1.4/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/jbrooks/.rvm/rubies/ruby-2.1.4/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/jbrooks/.rvm/rubies/ruby-2.1.4/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/jbrooks/.rvm/gems/ruby-2.1.4/gems/actionpack-4.1.9/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.6ms)
+  Rendered /Users/jbrooks/.rvm/gems/ruby-2.1.4/gems/actionpack-4.1.9/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.5ms)
+  Rendered /Users/jbrooks/.rvm/gems/ruby-2.1.4/gems/actionpack-4.1.9/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.7ms)
+  Rendered /Users/jbrooks/.rvm/gems/ruby-2.1.4/gems/actionpack-4.1.9/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (9.7ms)
+
+
+Started GET "/energy?watts=1234" for 127.0.0.1 at 2015-04-18 12:31:18 -0700
+Processing by EnergyController#index as HTML
+  Parameters: {"watts"=>"1234"}
+Completed 404 Not Found in 6ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/energy?watts=1234&hours=123" for 127.0.0.1 at 2015-04-18 12:31:24 -0700
+Processing by EnergyController#index as HTML
+  Parameters: {"watts"=>"1234", "hours"=>"123"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/power?watts=1234" for 127.0.0.1 at 2015-04-18 12:31:52 -0700
+Processing by PowerController#index as HTML
+  Parameters: {"watts"=>"1234"}
+Completed 404 Not Found in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/power?watts=1234" for 127.0.0.1 at 2015-04-18 12:32:10 -0700
+Processing by PowerController#index as HTML
+  Parameters: {"watts"=>"1234"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)

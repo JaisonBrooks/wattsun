@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'docs/show'
+
   get 'home/show'
   root 'home#show'
   resources :energy, only: [:index,:new]

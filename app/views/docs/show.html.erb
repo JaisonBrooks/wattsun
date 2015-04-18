@@ -5,4 +5,67 @@
 </div>
 <div class="container">
   <h2>Introduction</h2>
+  <p>To use this API, first use the base URL <code>http://wattsun-k92aes2xkf.elasticbeanstalk.com/</code>. Then choose from one of the following endpoints to beging retrieving your data.<br><br>Note: The data returned from this API is formatted in JSON.</p>
+<hr>
+  <div class="container">
+    <h4>Power Conversion</h4>
+    <p>The power conversion endpoint is a simple endpoint for converting small or large amounts of power quickly and easily. </p>
+    <strong style="color:blue; font-size: 18px;">/power</strong>
+    <div class="container">
+      <br>
+      <strong>Available parameters: </strong>
+      <p>Units <strong>(required)</strong></p>
+      <ul>
+        <li>watts</li>
+        <li>kilowatts</li>
+        <li>megawatts</li>
+      </ul>
+    </div>
+    <div class="container">
+      <strong>Example Request: </strong><br>
+      <div class="well well-sm">
+        GET /power?<em>watts</em>=123456
+      </div>
+    </div>
+    <div class="container">
+      <strong>Response: </strong>
+      <div class="well well-sm">
+        { "watts":123456,"kilowatts":123.456,"megawatts":0.123456,"response_code":200 }
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <h4>Energy Conversion</h4>
+    <p>The energy conversion endpoint is used to convert power and time into energy.</p>
+    <strong style="color:blue; font-size: 18px;">/energy</strong>
+    <div class="container">
+      <br>
+        <strong>Available parameters:</strong>
+          <p>Units <strong>(required)</strong></p>
+            <ul>
+              <li>watts</li>
+              <li>kilowatts</li>
+              <li>megawatts</li>
+            </ul>
+          <p>Time <strong>(required)</strong></p>
+          <ul>
+            <li>hours</li>
+            <li>minutes <em>coming soon!</em></li>
+            <li>seconds <em>coming soon!</em></li>
+          </ul>
+        <br>
+    </div>
+    <div class="container">
+    <strong>Example Request: </strong><br>
+    <div class="well well-sm">
+      GET /energy?<em>watts</em>=123456&<em>hours</em>=1
+    </div>
+  </div>
+    <div class="container">
+    <strong>Response: </strong>
+    <div class="well well-sm">
+      {"watt_hours":123456,"kilowatt_hours":123.456,"megawatt_hours":0.123456,"response_code":200}
+    </div>
+  </div>
+  </div>
 </div>

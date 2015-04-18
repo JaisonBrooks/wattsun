@@ -1,28 +1,15 @@
-== README
+== WATTSUN
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+WattSun is an external API key that enables a user to easily convert watts to watt-hours, joules to watts, and amps to watts.
 
-Things you may want to cover:
+Example
 
-* Ruby version
+```
+curl http://wattsun-k92aes2xkf.elasticbeanstalk.com/power?watts=123456
+```
 
-* System dependencies
+Response
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+```json
+{"watts":123456,"kilowatts":123.456,"megawgiatts":0.123456,"code":200}
+```

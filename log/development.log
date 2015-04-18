@@ -1467,3 +1467,137 @@ Started GET "/power?watts=1234" for 127.0.0.1 at 2015-04-18 12:32:10 -0700
 Processing by PowerController#index as HTML
   Parameters: {"watts"=>"1234"}
 Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/power?watts=1234" for 127.0.0.1 at 2015-04-18 13:17:30 -0700
+Processing by PowerController#index as HTML
+  Parameters: {"watts"=>"1234"}
+Completed 200 OK in 33ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/power?watts=1234" for 127.0.0.1 at 2015-04-18 13:23:25 -0700
+Processing by PowerController#index as HTML
+  Parameters: {"watts"=>"1234"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/power?kilowatts=1234" for 127.0.0.1 at 2015-04-18 13:23:29 -0700
+Processing by PowerController#index as HTML
+  Parameters: {"kilowatts"=>"1234"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/power?megawatts=1234" for 127.0.0.1 at 2015-04-18 13:23:33 -0700
+Processing by PowerController#index as HTML
+  Parameters: {"megawatts"=>"1234"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/power?megawatts=1234" for 127.0.0.1 at 2015-04-18 13:23:44 -0700
+Processing by PowerController#index as HTML
+  Parameters: {"megawatts"=>"1234"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/power?megawatts=1234" for 127.0.0.1 at 2015-04-18 13:23:56 -0700
+Processing by PowerController#index as HTML
+  Parameters: {"megawatts"=>"1234"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/power?megawatts=1234" for 127.0.0.1 at 2015-04-18 13:24:19 -0700
+Processing by PowerController#index as HTML
+  Parameters: {"megawatts"=>"1234"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/power?megawatts=1234" for 127.0.0.1 at 2015-04-18 13:33:59 -0700
+Processing by PowerController#index as HTML
+  Parameters: {"megawatts"=>"1234"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/power?watts=1234" for 127.0.0.1 at 2015-04-18 13:34:03 -0700
+Processing by PowerController#index as HTML
+  Parameters: {"watts"=>"1234"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/power?watts=1234" for 127.0.0.1 at 2015-04-18 13:34:36 -0700
+Processing by PowerController#index as HTML
+  Parameters: {"watts"=>"1234"}
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/power?watts=1234" for 127.0.0.1 at 2015-04-18 13:34:50 -0700
+Processing by PowerController#index as HTML
+  Parameters: {"watts"=>"1234"}
+Completed 200 OK in 0ms (Views: 0.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/energy?watts=1234" for 127.0.0.1 at 2015-04-18 13:34:58 -0700
+Processing by EnergyController#index as HTML
+  Parameters: {"watts"=>"1234"}
+Completed 404 Not Found in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/energy?watts=1234&hours=12" for 127.0.0.1 at 2015-04-18 13:35:06 -0700
+Processing by EnergyController#index as HTML
+  Parameters: {"watts"=>"1234", "hours"=>"12"}
+Completed 500 Internal Server Error in 0ms
+
+NoMethodError (undefined method `watt_hours' for 0.014808000000000002:Float):
+  app/controllers/energy_controller.rb:22:in `energy_output'
+  app/controllers/energy_controller.rb:8:in `index'
+
+
+  Rendered /Users/jbrooks/.rvm/gems/ruby-2.1.4/gems/actionpack-4.1.9/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
+  Rendered /Users/jbrooks/.rvm/gems/ruby-2.1.4/gems/actionpack-4.1.9/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.7ms)
+  Rendered /Users/jbrooks/.rvm/gems/ruby-2.1.4/gems/actionpack-4.1.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /Users/jbrooks/.rvm/gems/ruby-2.1.4/gems/actionpack-4.1.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (11.4ms)
+
+
+Started GET "/energy?watts=1234&hours=12" for 127.0.0.1 at 2015-04-18 13:37:24 -0700
+Processing by EnergyController#index as HTML
+  Parameters: {"watts"=>"1234", "hours"=>"12"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/energy?watts=1234&hours=12" for 127.0.0.1 at 2015-04-18 13:38:06 -0700
+Processing by EnergyController#index as HTML
+  Parameters: {"watts"=>"1234", "hours"=>"12"}
+Completed 500 Internal Server Error in 1ms
+
+NoMethodError (undefined method `watt_hours' for 0.014808000000000002:Float):
+  app/controllers/energy_controller.rb:21:in `energy_output'
+  app/controllers/energy_controller.rb:7:in `index'
+
+
+  Rendered /Users/jbrooks/.rvm/gems/ruby-2.1.4/gems/actionpack-4.1.9/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.4ms)
+  Rendered /Users/jbrooks/.rvm/gems/ruby-2.1.4/gems/actionpack-4.1.9/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.8ms)
+  Rendered /Users/jbrooks/.rvm/gems/ruby-2.1.4/gems/actionpack-4.1.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /Users/jbrooks/.rvm/gems/ruby-2.1.4/gems/actionpack-4.1.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (9.4ms)
+
+
+Started GET "/energy?watts=1234&hours=12" for 127.0.0.1 at 2015-04-18 13:39:55 -0700
+Processing by EnergyController#index as HTML
+  Parameters: {"watts"=>"1234", "hours"=>"12"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/energy?watts=1234&hours=12" for 127.0.0.1 at 2015-04-18 13:43:18 -0700
+Processing by EnergyController#index as HTML
+  Parameters: {"watts"=>"1234", "hours"=>"12"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/power?watts=1234" for 127.0.0.1 at 2015-04-18 13:43:27 -0700
+Processing by PowerController#index as HTML
+  Parameters: {"watts"=>"1234"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/power?watts=12345566789766" for 127.0.0.1 at 2015-04-18 13:43:37 -0700
+Processing by PowerController#index as HTML
+  Parameters: {"watts"=>"12345566789766"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)

@@ -5,3 +5,5 @@
 !.elasticbeanstalk/*.global.yml
 bin/*
 .ruby-version
+.idea/*
+tmp/*

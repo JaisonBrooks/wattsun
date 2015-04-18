@@ -8,6 +8,9 @@ def index
     obj.to_energy(params[:hours])
 
     render status: 200, json: energy_output(obj).to_json
+  elsif params[:watts].present? && params[:seconds].present?
+
+    render status: 200, json: {joules: (params[:watts].to_i * params[:seconds].to_i)}.to_json
   elsif params[:kilowatts].present? && params[:hours].present?
 
     obj = Kilowatt.new(params[:kilowatts])

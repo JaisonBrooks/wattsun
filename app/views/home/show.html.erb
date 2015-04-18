@@ -1,7 +1,37 @@
-<h1>Home#show</h1>
-<p>Find me in app/views/home/show.html.erb</p>
+<div class="jumbotron">
+  <div class="container">
+    <h1>WattSun API</h1>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-lg-4">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h1>Demos</h1>
+        </div>
+        <div class="panel-body">
+          <p>Take a look at our online conversion calculators to quickly convert power to energy.</p>
+        </div>
+        <div class="panel-footer">
+          <%= link_to 'Power Conversion', 'power/new', :class => 'btn btn-danger' %>
+          <%= link_to 'Energy Conversion', 'energy/new', :class => 'btn btn-danger' %>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h1>API</h1>
+        </div>
+        <div class="panel-body">
+          <p>The API has been built to be both easy to use for Developers as well as useful to your average-joe.</p>
+        </div>
+        <div class="panel-footer">
+          <a class="btn btn-info" href="/docs">Read the Doc</a>
+        </div>
+      </div>
 
-
-Welcome
-
-The WattSun api is a REST programing api used to easily convert
+    </div>
+  </div>
+</div>

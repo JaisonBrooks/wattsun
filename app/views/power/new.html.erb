@@ -3,10 +3,40 @@
     <h1>Power Conversion</h1>
   </div>
 </div>
-<div class="container">
-  <h2>Watts</h2>
-  <input type="text" class="form-control" id="watts" />
+<div class="container" style="max-width: 620px;">
+  <h1>Watts</h1>
+  <input type="text" style="border: 2px dotted rgba(0,0,0,0.0); font-size:48px; width: 100%; padding: 12px; border-radius: 4px; color:white; background-color: rgba(0,0,0,0);" id="watts" />
   <div id="results">
-    
   </div>
 </div>
+
+<script>
+    $('body').addClass('colorful');
+    $("input").focus();
+    $("input").keyup(function() {
+
+        if (($(this).val() == '') || ($(this).val().length == 0)) {
+            if ($("#kilowatts:visible" ) || $("#megawatts:visible")) {
+                $('#kilowatts').remove();
+                $('#megawatts').remove();
+            }
+        }
+
+        var watts = $('#watts').val();
+        if ($.isNumeric(watts)) {
+            $.ajax({
+                dataType: "json",
+                url: "/power?watts=" + watts,
+                success: success
+            });
+        }
+    });
+
+        function success(data) {
+
+            var html = '<div id="kilowatts"><h1>Kilowatts</h1>' + '<br><p style="color:white; font-size:48px; padding: 12px;">' + data.kilowatts + '</p></div>' +
+                        '<div id="megawatts"><h1>Megawatts</h1>' + '<br><p style="color:white; font-size:48px; padding: 12px;">' + data.megawatts + '</p></div>';
+            $('#results').html(html);
+        }
+
+</script>

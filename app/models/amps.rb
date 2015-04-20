@@ -13,7 +13,7 @@ class Amps
 
   def ac_single_to_watts(volts, power_factor)
     if power_factor.to_i <= 1
-      Watt.new(power_factor * @amps * volts.to_f)
+      Watt.new(power_factor.to_i * @amps * volts.to_f)
     else
       :calc_error
     end

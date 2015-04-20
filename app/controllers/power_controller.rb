@@ -5,6 +5,10 @@ class PowerController < ApplicationController
 
     if params[:amps].present? && params[:voltage_type].present? && params[:power_factor].present? && params[:volts].present?
       validate(Amps.new(params[:amps]).ac_three_to_watts(params[:volts], params[:voltage_type], params[:power_factor]))
+    elsif params[:amps].present? && params[:power_factor].present? && params[:volts].present?
+      validate(Amps.new(params[:amps]).ac_single_to_watts(params[:volts], params[:power_factor]))
+    elsif params[:amps].present? && params[:volts].present?
+      validate(Amps.new(params[:amps]).dc_to_watts(params[:volts]))
     elsif params[:watts].present?
       validate(Watt.new(params[:watts]))
     elsif params[:kilowatts].present?

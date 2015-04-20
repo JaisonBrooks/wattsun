@@ -25447,3 +25447,387 @@ Started GET "/power?amps=4.9&voltage_type=l2l&power_factor=0.4&volts=6" for 127.
 Processing by PowerController#index as HTML
   Parameters: {"amps"=>"4.9", "voltage_type"=>"l2l", "power_factor"=>"0.4", "volts"=>"6"}
 Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-19 17:24:43 -0700
+Processing by HomeController#show as HTML
+  Rendered home/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 229ms (Views: 221.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/calculators.css?body=1" for 127.0.0.1 at 2015-04-19 17:24:43 -0700
+
+
+Started GET "/assets/twitter-bootstrap-static/bootstrap.css?body=1" for 127.0.0.1 at 2015-04-19 17:24:43 -0700
+
+
+Started GET "/assets/docs.css?body=1" for 127.0.0.1 at 2015-04-19 17:24:43 -0700
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2015-04-19 17:24:43 -0700
+
+
+Started GET "/assets/energy.css?body=1" for 127.0.0.1 at 2015-04-19 17:24:43 -0700
+
+
+Started GET "/assets/twitter-bootstrap-static/fontawesome.css?body=1" for 127.0.0.1 at 2015-04-19 17:24:43 -0700
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2015-04-19 17:24:43 -0700
+
+
+Started GET "/assets/power.css?body=1" for 127.0.0.1 at 2015-04-19 17:24:43 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-19 17:24:43 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-19 17:24:43 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-04-19 17:24:43 -0700
+
+
+Started GET "/assets/twitter/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-04-19 17:24:43 -0700
+
+
+Started GET "/assets/twitter/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-04-19 17:24:43 -0700
+
+
+Started GET "/assets/twitter/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-04-19 17:24:43 -0700
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-04-19 17:24:43 -0700
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-04-19 17:24:43 -0700
+
+
+Started GET "/assets/twitter/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-04-19 17:24:43 -0700
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-04-19 17:24:43 -0700
+
+
+Started GET "/assets/twitter/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-04-19 17:24:43 -0700
+
+
+Started GET "/assets/twitter/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-04-19 17:24:43 -0700
+
+
+Started GET "/assets/twitter/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-04-19 17:24:43 -0700
+
+
+Started GET "/assets/twitter/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-04-19 17:24:43 -0700
+
+
+Started GET "/assets/twitter/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-04-19 17:24:43 -0700
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2015-04-19 17:24:43 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-19 17:24:43 -0700
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-04-19 17:24:43 -0700
+
+
+Started GET "/assets/calculators.js?body=1" for 127.0.0.1 at 2015-04-19 17:24:43 -0700
+
+
+Started GET "/assets/docs.js?body=1" for 127.0.0.1 at 2015-04-19 17:24:43 -0700
+
+
+Started GET "/assets/energy.js?body=1" for 127.0.0.1 at 2015-04-19 17:24:43 -0700
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2015-04-19 17:24:43 -0700
+
+
+Started GET "/assets/power.js?body=1" for 127.0.0.1 at 2015-04-19 17:24:43 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-19 17:24:43 -0700
+
+
+Started GET "/power?amps=4.9&voltage_type=l2l&power_factor=0.4&volts=6" for 127.0.0.1 at 2015-04-19 17:24:46 -0700
+Processing by PowerController#index as HTML
+  Parameters: {"amps"=>"4.9", "voltage_type"=>"l2l", "power_factor"=>"0.4", "volts"=>"6"}
+Completed 500 Internal Server Error in 3ms
+
+NoMethodError (undefined method `/' for "20":String):
+  app/models/watt.rb:7:in `initialize'
+  app/models/amps.rb:24:in `new'
+  app/models/amps.rb:24:in `ac_three_to_watts'
+  app/controllers/power_controller.rb:7:in `index'
+
+
+  Rendered /Users/jbrooks/.rvm/gems/ruby-2.1.4/gems/actionpack-4.1.9/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
+  Rendered /Users/jbrooks/.rvm/gems/ruby-2.1.4/gems/actionpack-4.1.9/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered /Users/jbrooks/.rvm/gems/ruby-2.1.4/gems/actionpack-4.1.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/jbrooks/.rvm/gems/ruby-2.1.4/gems/actionpack-4.1.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (10.9ms)
+
+
+Started GET "/power?amps=4.9&voltage_type=l2l&power_factor=0.4&volts=6" for 127.0.0.1 at 2015-04-19 17:25:09 -0700
+Processing by PowerController#index as HTML
+  Parameters: {"amps"=>"4.9", "voltage_type"=>"l2l", "power_factor"=>"0.4", "volts"=>"6"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/power?amps=4.9&voltage_type=l2l&power_factor=0.4&volts=6" for 127.0.0.1 at 2015-04-19 17:25:20 -0700
+Processing by PowerController#index as HTML
+  Parameters: {"amps"=>"4.9", "voltage_type"=>"l2l", "power_factor"=>"0.4", "volts"=>"6"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/power?amps=4.9&voltage_type=l2l&power_factor=0.4&volts=6" for 127.0.0.1 at 2015-04-19 17:25:24 -0700
+Processing by PowerController#index as HTML
+  Parameters: {"amps"=>"4.9", "voltage_type"=>"l2l", "power_factor"=>"0.4", "volts"=>"6"}
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/power?amps=12.4&volts=36" for 127.0.0.1 at 2015-04-19 17:28:59 -0700
+Processing by PowerController#index as HTML
+  Parameters: {"amps"=>"12.4", "volts"=>"36"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/power?amps=12.4&volts=36&power_factor=1" for 127.0.0.1 at 2015-04-19 17:29:06 -0700
+Processing by PowerController#index as HTML
+  Parameters: {"amps"=>"12.4", "volts"=>"36", "power_factor"=>"1"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/power/new" for 127.0.0.1 at 2015-04-19 17:29:37 -0700
+Processing by PowerController#new as HTML
+  Rendered power/new.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 127ms (Views: 126.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/twitter-bootstrap-static/bootstrap.css?body=1" for 127.0.0.1 at 2015-04-19 17:29:37 -0700
+
+
+Started GET "/assets/twitter-bootstrap-static/fontawesome.css?body=1" for 127.0.0.1 at 2015-04-19 17:29:37 -0700
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2015-04-19 17:29:37 -0700
+
+
+Started GET "/assets/calculators.css?body=1" for 127.0.0.1 at 2015-04-19 17:29:37 -0700
+
+
+Started GET "/assets/docs.css?body=1" for 127.0.0.1 at 2015-04-19 17:29:37 -0700
+
+
+Started GET "/assets/energy.css?body=1" for 127.0.0.1 at 2015-04-19 17:29:37 -0700
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2015-04-19 17:29:37 -0700
+
+
+Started GET "/assets/power.css?body=1" for 127.0.0.1 at 2015-04-19 17:29:37 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-19 17:29:37 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-19 17:29:37 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-04-19 17:29:37 -0700
+
+
+Started GET "/assets/twitter/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-04-19 17:29:37 -0700
+
+
+Started GET "/assets/twitter/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-04-19 17:29:37 -0700
+
+
+Started GET "/assets/twitter/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-04-19 17:29:37 -0700
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-04-19 17:29:37 -0700
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-04-19 17:29:37 -0700
+
+
+Started GET "/assets/twitter/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-04-19 17:29:37 -0700
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-04-19 17:29:37 -0700
+
+
+Started GET "/assets/twitter/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-04-19 17:29:37 -0700
+
+
+Started GET "/assets/twitter/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-04-19 17:29:37 -0700
+
+
+Started GET "/assets/twitter/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-04-19 17:29:37 -0700
+
+
+Started GET "/assets/twitter/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-04-19 17:29:37 -0700
+
+
+Started GET "/assets/twitter/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-04-19 17:29:37 -0700
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2015-04-19 17:29:37 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-19 17:29:37 -0700
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-04-19 17:29:37 -0700
+
+
+Started GET "/assets/calculators.js?body=1" for 127.0.0.1 at 2015-04-19 17:29:37 -0700
+
+
+Started GET "/assets/docs.js?body=1" for 127.0.0.1 at 2015-04-19 17:29:37 -0700
+
+
+Started GET "/assets/energy.js?body=1" for 127.0.0.1 at 2015-04-19 17:29:37 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-19 17:29:37 -0700
+
+
+Started GET "/assets/power.js?body=1" for 127.0.0.1 at 2015-04-19 17:29:37 -0700
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2015-04-19 17:29:37 -0700
+
+
+Started GET "/power?watts=1" for 127.0.0.1 at 2015-04-19 17:30:00 -0700
+Processing by PowerController#index as JSON
+  Parameters: {"watts"=>"1"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/power?watts=12" for 127.0.0.1 at 2015-04-19 17:30:01 -0700
+Processing by PowerController#index as JSON
+  Parameters: {"watts"=>"12"}
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/power?watts=122" for 127.0.0.1 at 2015-04-19 17:30:05 -0700
+Processing by PowerController#index as JSON
+  Parameters: {"watts"=>"122"}
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/power?watts=1223" for 127.0.0.1 at 2015-04-19 17:30:06 -0700
+Processing by PowerController#index as JSON
+  Parameters: {"watts"=>"1223"}
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/power?watts=12234" for 127.0.0.1 at 2015-04-19 17:30:06 -0700
+Processing by PowerController#index as JSON
+  Parameters: {"watts"=>"12234"}
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/power?watts=122345" for 127.0.0.1 at 2015-04-19 17:30:06 -0700
+Processing by PowerController#index as JSON
+  Parameters: {"watts"=>"122345"}
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/power?watts=1223456" for 127.0.0.1 at 2015-04-19 17:30:06 -0700
+Processing by PowerController#index as JSON
+  Parameters: {"watts"=>"1223456"}
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/power?watts=12234566" for 127.0.0.1 at 2015-04-19 17:30:07 -0700
+Processing by PowerController#index as JSON
+  Parameters: {"watts"=>"12234566"}
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/power?watts=122345667" for 127.0.0.1 at 2015-04-19 17:30:07 -0700
+Processing by PowerController#index as JSON
+  Parameters: {"watts"=>"122345667"}
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/power?watts=1223456678" for 127.0.0.1 at 2015-04-19 17:30:07 -0700
+Processing by PowerController#index as JSON
+  Parameters: {"watts"=>"1223456678"}
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/power?watts=12234566788" for 127.0.0.1 at 2015-04-19 17:30:07 -0700
+Processing by PowerController#index as JSON
+  Parameters: {"watts"=>"12234566788"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/power?watts=122345667888" for 127.0.0.1 at 2015-04-19 17:30:07 -0700
+Processing by PowerController#index as JSON
+  Parameters: {"watts"=>"122345667888"}
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/power?watts=1223456678886" for 127.0.0.1 at 2015-04-19 17:30:07 -0700
+Processing by PowerController#index as JSON
+  Parameters: {"watts"=>"1223456678886"}
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/power?watts=12234566788865" for 127.0.0.1 at 2015-04-19 17:30:08 -0700
+Processing by PowerController#index as JSON
+  Parameters: {"watts"=>"12234566788865"}
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/power?watts=122345667888654" for 127.0.0.1 at 2015-04-19 17:30:08 -0700
+Processing by PowerController#index as JSON
+  Parameters: {"watts"=>"122345667888654"}
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/power?watts=12234566788865432" for 127.0.0.1 at 2015-04-19 17:30:08 -0700
+Processing by PowerController#index as JSON
+  Parameters: {"watts"=>"12234566788865432"}
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/power?watts=12234566788865432" for 127.0.0.1 at 2015-04-19 17:30:08 -0700
+Processing by PowerController#index as JSON
+  Parameters: {"watts"=>"12234566788865432"}
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/power?watts=12234566788865432" for 127.0.0.1 at 2015-04-19 17:30:09 -0700
+Processing by PowerController#index as JSON
+  Parameters: {"watts"=>"12234566788865432"}
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/power?watts=12234566788865432" for 127.0.0.1 at 2015-04-19 17:30:09 -0700
+Processing by PowerController#index as JSON
+  Parameters: {"watts"=>"12234566788865432"}
+Completed 200 OK in 0ms (Views: 0.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/docs" for 127.0.0.1 at 2015-04-19 17:30:14 -0700
+Processing by DocsController#show as HTML
+  Rendered docs/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 126ms (Views: 125.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-19 17:30:15 -0700
+Processing by HomeController#show as HTML
+  Rendered home/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 129ms (Views: 128.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/energy?watts=123456789&hours=123" for 127.0.0.1 at 2015-04-19 17:30:25 -0700
+Processing by EnergyController#index as HTML
+  Parameters: {"watts"=>"123456789", "hours"=>"123"}
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)

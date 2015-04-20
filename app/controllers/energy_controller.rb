@@ -32,10 +32,10 @@ end
   private
 
   def energy_output(obj)
-    {:watt_hours => obj.watt_hours, :kilowatt_hours => obj.kilowatt_hours, :megawatt_hours => obj.megawatt_hours, :response_code => 200}
+    {:watt_hours => obj.watt_hours, :kilowatt_hours => obj.kilowatt_hours, :megawatt_hours => obj.megawatt_hours, :status_code => 200}
   end
 
   def render_error
-    render status: 404, json: {:message => "Invalid request, please try again", :error_code => 7}.to_json
+    render status: 401, json: {:message => "Invalid request, please try again", :status_code => 401}.to_json
   end
 end

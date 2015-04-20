@@ -1,0 +1,30 @@
+<div class="jumbotron">
+  <div class="container">
+    <h1>Calculators</h1>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-lg-4">
+      <div class="panel panel-default">
+          <div class="panel-heading"><h2>Power Calculator</h2></div>
+          <div class="panel-body">This calculator is great for converting large amounts of power (ie. watt-hours) to a large, easily readable format.</div>
+          <div class="panel-footer"><%= link_to 'View Calculator', 'power/new', :class => 'btn btn-info' %></div>
+      </div>
+    </div>
+    <div class="col-lg-4">
+      <div class="panel panel-default">
+        <div class="panel-heading"><h2>Energy Calculator</h2></div>
+        <div class="panel-body">Calculating watts and time into Energy and showing how that converts to higher and lower units.</div>
+        <div class="panel-footer"><%= link_to 'View Calculator', 'energy/new', :class => 'btn btn-info' %></div>
+      </div>
+    </div>
+    <div class="col-lg-4">
+      <div class="panel panel-default">
+        <div class="panel-heading"><h2>More Calculators?</h2></div>
+        <div class="panel-body">There are plenty more calculators we anticipate on building and stay tuned for more.</div>
+        <div class="panel-footer"><%= link_to 'Coming soon', :root, {:class => 'btn btn-info', :disabled => 'disabled'} %></div>
+      </div>
+    </div>
+  </div>
+</div>

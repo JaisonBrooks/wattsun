@@ -1,48 +1,33 @@
 <div class="jumbotron">
   <div class="container">
-    <h1>WattSun API Energy Conversion</h1>
+    <h1>WattSun Energy Conversion</h1>
   </div>
 </div>
 <div class="container">
   <div class="row">
-    <div class="col-lg-4">
+    <div class="col-lg-6">
       <div class="panel panel-default">
         <div class="panel-heading">
-          <h2>Power & Energy Calculator</h2>
+          <h2>Calculators</h2>
         </div>
         <div class="panel-body">
-          <p>A simple and elegant solution to convert power production into usable energy readouts</p>
+          <p>A simple and elegant solution for converting power and energy using common conversion formulas.</p>
         </div>
         <div class="panel-footer">
-          <%= link_to 'Power To Energy', 'power/new', :class => 'btn btn-danger' %>
-          <%= link_to 'Energy To Power', 'energy/new', :class => 'btn btn-danger' %>
+          <%= link_to 'View Calculators', 'calculators', :class => 'btn btn-info' %>
         </div>
       </div>
     </div>
-    <div class="col-lg-4">
+    <div class="col-lg-6">
       <div class="panel panel-default">
         <div class="panel-heading">
           <h2>Developer Integration</h2>
         </div>
         <div class="panel-body">
-          <p>Are you a developer looking to add our tool to your site?</p>
+          <p>Are you a developer looking for a simple API to handle energy conversion for you? Look no further.</p>
         </div>
         <div class="panel-footer">
-          <%= link_to 'View API Requirements', 'energy/new', :class => 'btn btn-info' %>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-lg-4">
-      <div class="panel panel-default">
-        <div class="panel-heading">
-          <h2>Documentation</h2>
-        </div>
-        <div class="panel-body">
-          <p>Want to learn more?</p><br>
-        </div>
-        <div class="panel-footer">
-          <%= link_to 'Read the Documentation', 'energy/new', :class => 'btn btn-info' %>
+          <%= link_to 'View API Requirements', 'docs', :class => 'btn btn-info' %>
         </div>
       </div>
     </div>

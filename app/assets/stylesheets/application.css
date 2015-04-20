@@ -16,3 +16,6 @@
 .colorful {
     background-color: #E65100;
 }
+*:focus {
+    outline: 0;
+}

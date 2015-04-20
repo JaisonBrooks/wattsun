@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
+  get 'calculators' => 'calculators#show'
   get 'docs' => 'docs#show'
-
   get 'home/show'
   root 'home#show'
   resources :energy, only: [:index,:new]

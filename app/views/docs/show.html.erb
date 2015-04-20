@@ -4,9 +4,12 @@
   </div>
 </div>
 <div class="container">
-  <h2>Introduction</h2>
-  <p>To use this API, first use the base URL <code>http://wattsun-k92aes2xkf.elasticbeanstalk.com/</code>. Then choose from one of the following endpoints to beging retrieving your data.<br><br>Note: The data returned from this API is formatted in JSON.</p>
-<hr>
+    <h3>Getting Started</h3>
+    <p>To use this API, you must first start with this base URL <code>http://wattsun-k92aes2xkf.elasticbeanstalk.com/</code>.  The API is a simple resource based programing interface and only requires <strong>GET</strong> HTTP requests. The response body will always be formatted as JSON and will contain a <code>status_code</code> with every response.</p>
+    <hr>
+</div>
+  <div class="container">
+    <h3>API Endpoints</h3>
   <div class="container">
     <h4>Power Conversion</h4>
     <p>The power conversion endpoint is a simple endpoint for converting small or large amounts of power quickly and easily. </p>
@@ -29,9 +32,13 @@
     </div>
     <div class="container">
       <strong>Response: </strong>
-      <div class="well well-sm">
-        { "watts":123456,"kilowatts":123.456,"megawatts":0.123456,"response_code":200 }
-      </div>
+      <pre>
+{
+    "watts":123456,
+    "kilowatts":123.456,
+    "megawatts":0.123456,
+    "status_code":200
+}</pre>
     </div>
   </div>
   <div class="container">
@@ -63,9 +70,13 @@
   </div>
     <div class="container">
     <strong>Response: </strong>
-    <div class="well well-sm">
-      {"watt_hours":123456,"kilowatt_hours":123.456,"megawatt_hours":0.123456,"response_code":200}
-    </div>
+      <pre>
+{
+    "watt_hours":123456,
+    "kilowatt_hours":123.456,
+    "megawatt_hours":0.123456,
+    "status_code":200
+}</pre>
   </div>
   </div>
 </div>

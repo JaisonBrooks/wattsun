@@ -13,7 +13,7 @@ curl http://wattsun-k92aes2xkf.elasticbeanstalk.com/power?watts=123456
 You should get a response that looks something like
 
 ```json
-{"watts":123456,"kilowatts":123.456,"megawgiatts":0.123456,"code":200}
+{"watts":123456,"kilowatts":123.456,"megawatts":0.123456,"code":200}
 ```
 
 Also check the watt to watt hour
